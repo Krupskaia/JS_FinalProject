@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Cardiff by the Sea Pizza</title>
+    <link rel="icon" href="favicon.ico">
+    <!-- Bootstrap -->
+
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="images/Cardiffs%20Pizza%20Logo.png" alt="Cardiff's Pizza"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="order.html">Order</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container marketing">
+
+        <h2 class="featurette-heading text-center">Order <span class="text-muted">your pizza <img class="featurette-image img-responsive logo_sm" src="images/pizza-2389233_1280.png" alt="Generic placeholder image"></span>                </h2>
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+
+            <div class="col-md-6 col-md-offset-1">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Delivery Location
+                    </div>
+                    <!-- /.panel-heading -->
+                    <div class="panel-body">
+                        <form id="delivery" role="form">
+                            <div class="form-group col-md-6">
+                                <label class="sr-only" for="firstName">First Name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="sr-only" for="lastName">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                            </div>
+                            <div class="form-group col-md-12"> Select address type
+                                <select class="form-control" id="addressType">
+                                    <option>House</option>
+                                    <option>Apartment</option>
+                                    <option>Business</option>
+                                    <option>Campus</option>
+                                    <option>Hotel</option>
+                                    <option>Dorm</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-11 col-md-offset-1" id="other">
+                                <label class="sr-only" for="other">Other</label>
+                                <input type="text" class="form-control col-md-6" id="otherAddress" placeholder="Detail the type of address">
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label class="sr-only" for="streetAddress">Street address</label>
+                                <input type="text" class="form-control" id="streetAddress" placeholder="Street address">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label class="sr-only" for="apt">Apt., Suite, or Room #</label>
+                                <input type="text" class="form-control" id="apt" placeholder="Apt., Suite, or Room #">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="sr-only" for="city">City</label>
+                                <input type="text" class="form-control" id="city" placeholder="City">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="sr-only" for="state">State</label>
+                                <input type="text" class="form-control" id="state" placeholder="State">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="sr-only" for="zipCode">Zip Code</label>
+                                <input type="text" class="form-control" id="zipCode" placeholder="Zip Code">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="sr-only" for="phoneNumber">Phone Number</label>
+                                <input type="text" class="form-control" id="phoneNumber" placeholder="Phone Number">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label class="sr-only" for="email">Email</label>
+                                <input type="text" class="form-control" id="email" placeholder="Email">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Build Your Order
+                    </div>
+                    <!-- /.panel-heading -->
+                    <div class="panel-body">
+                        <form>
+                            <div class="form-group col-md-10 col-md-offset-1">
+                                <label>Dough</label>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="dough" id="dough1" value="HandTossed" checked>Hand Tossed
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="dough" id="dough2" value="ThinCrust">Thin Crust
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="dough" id="dough3" value="NewYorkStyle">New York Style
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="dough" id="dough4" value="GlutenFree">Gluten Free
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-10 col-md-offset-1">
+                                <label>Size and Price </label>
+                                <select class="form-control" id="sizes" name="sizes">
+                                    <option value="0.00" selected>Select</option>
+                                    <option value='9.99'>Small ($9.99)</option>
+                                    <option value='12.99'>Medium ($12.99)</option>
+                                    <option value='14.99'>Large ($14.99)</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-10 col-md-offset-1">
+                                <label>Cheese</label>
+                                <select class="form-control" id="cheese">
+                                    <option value='0.0' selected>Light: no charge</option>
+                                    <option value='0.0'>Normal (default): no charge</option>
+                                    <option value='2.99'>Extra: +$2.99</option>
+                                    <option value='3.99'>Double: +$3.99</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-10 col-md-offset-1">
+                                <label>Sauce</label>
+                                <select class="form-control" id="sauce">
+                                    <option value='0.0' select>Regular Tomato: no charge</option>
+                                    <option value='0.99'>Hearty Tomato: +$.99</option>
+                                    <option value='1.99'>BBQ Sauce: +$1.99</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-md-10 col-md-offset-1">
+                                <label>Toppings - Each topping is $.99 extra</label>
+                                <div class="checkbox" id="toppings">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value=".99">Pepperoni
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value=".99">Sausage
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value=".99">Ham
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value=".99">Bacon
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value=".99">Salami
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value=".99">Peppers
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value=".99">Olives
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value=".99">Jalapenos
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value=".99">Mushrooms
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value=".99">Pineapple
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value=".99">Onion
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <button class="btn btn-default btn-block" id="buildPizza">Finished Building Pizza</button>
+                </div>
+
+                <div class="panel panel-default" id="billing">
+                    <div class="panel-heading">
+                        Billing Information
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="same">Same as delivery information
+                            </label>
+                        </div>
+                    </div>
+                    <!-- /.panel-heading -->
+                    <div class="panel-body">
+                        <form id="billingf" role="form" onsubmit="return validateForm()" method="post">
+                            <div class="form-group col-md-8">
+                                <label class="sr-only" for="streetAddressB">Street address</label>
+                                <input type="text" class="form-control" id="streetAddressB" placeholder="Street address">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label class="sr-only" for="aptB">Apt., Suite, or Room #</label>
+                                <input type="text" class="form-control" id="aptB" placeholder="Apt., Suite, or Room #">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label class="sr-only" for="cityB">City</label>
+                                <input type="text" class="form-control" id="cityB" placeholder="City">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label class="sr-only" for="stateB">State</label>
+                                <input type="text" class="form-control" id="stateB" placeholder="State">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label class="sr-only" for="zipCodeB">Zip Code</label>
+                                <input type="text" class="form-control" id="zipCodeB" placeholder="Zip Code">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label class="sr-only" for="nameCard">Name on Card</label>
+                                <input type="text" class="form-control col-md-6" id="nameCard" placeholder="Name on Card">
+                            </div>
+                            <div class="form-group col-md-9">
+                                <label class="sr-only" for="creditCard">Credit Card number</label>
+                                <input type="text" class="form-control col-md-6" id="creditCard" placeholder="Credit card number" onkeypress="javascript:return isNumber(event)">
+                            </div>
+                            <div class="cc form-group col-md-2">
+                                <div id='logocc'></div>
+                                <!--                                <div class=" mc "></div>
+                                <div class="vc "></div>
+                                <div class="ac "></div>-->
+                            </div>
+                            <span class="form-group col-md-12 text-danger" id="errorcc"></span>
+
+                            <span class="form-group col-md-12"> Expiration Date:</span>
+
+                            <div class="form-group col-md-4">
+
+                                <select class="form-control" id="monthB">
+                                    <option>Month</option>
+                                    <option>Jan</option>
+                                    <option>Feb</option>
+                                    <option>Mar</option>
+                                    <option>Apr</option>
+                                    <option>May</option>
+                                    <option>Jun</option>
+                                    <option>Jul</option>
+                                    <option>Aug</option>
+                                    <option>Sep</option>
+                                    <option>Oct</option>
+                                    <option>Nov</option>
+                                    <option>Dec</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <select class="form-control " id="yearB">
+                                    <option>Year</option>
+                                    <option>2018</option>
+                                    <option>2019</option>
+                                    <option>2020</option>
+                                    <option>2021</option>
+                                    <option>2022</option>
+                                    <option>2023</option>
+                                    <option>2024</option>
+                                    <option>2025</option>
+                                    <option>2026</option>
+                                    <option>2027</option>
+                                    <option>2028</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label class="sr-only " for="cvv">CVV</label>
+                                <input type="text" class="form-control col-md-6 " id="cvv" placeholder="CVV ">
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <i class="fa fa-shopping-cart fa-fw"></i> Your Order
+                    </div>
+                    <!-- /.panel-heading -->
+                    <div class="panel-body">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item">
+                                <i class="fa fa-smile-o"></i> Pizza
+                                <span id="totalPizza" class="pull-right text-muted small"><em>0.00</em>
+                                    </span>
+                            </a>
+                            <a id='txtCheese' href="#" class="list-group-item">
+                                <i class="fa fa-adjust"></i> Cheese
+                                <span id="totalChesse" class="pull-right text-muted small"><em>0.00</em>
+                                    </span>
+                            </a>
+                            <a id='txtSauce' href="#" class="list-group-item ">
+                                <i class="fa fa-tint"></i> Sauce
+                                <span id="totalSauce" class="pull-right text-muted small"><em>0.00</em>
+                                    </span>
+                            </a>
+                            <a id='Toppings' href="#" class="list-group-item">
+                                <i class="fa fa-th-large"></i> Toppings
+                                <span id="totalToppings" class="pull-right text-muted small"><em>0.00</em>
+                                    </span>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <i class="fa fa-money fa-fw"></i> Total
+                                <span id="total" class="pull-right text-muted small"><em>0.00</em>
+                                    </span>
+                            </a>
+
+                        </div>
+                    </div>
+                    <!-- /.panel-body -->
+                </div>
+                <div class="panel panel-default">
+                    <button class="btn btn-default btn-block" id="orderPizza">Place Order</button>
+                </div>
+                <!-- /.panel -->
+                <!--<img class="featurette-image img-responsive center-block logo_lg " src="images/Cardiffs%20Pizza%20Logo_w.png " alt="Generic placeholder image ">-->
+                <img class="featurette-image img-responsive center-block " src="images/Cardiffs%20Pizza%20Logo_b.png " alt="Generic placeholder image ">
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer class="footer ">
+        <div class="container ">
+            <p class="pull-right text-muted "><a href="# ">Back to top</a></p>
+            <p class="text-muted ">&copy; 2016 Company, Inc. &middot;</p>
+        </div>
+
+    </footer>
+
+    <script src="js/script.js "></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>-->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa " crossorigin="anonymous "></script>-->
+</body>
+
+</html>

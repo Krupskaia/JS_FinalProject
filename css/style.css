@@ -1,0 +1,107 @@
+body {
+    min-height: 100%;
+    padding-bottom: 0;
+}
+main {
+    background: url('../images/CardiffsPizzaWatermark.png') repeat;
+    margin: 20px auto 0 auto;
+}
+.navbar-brand {
+    height: 80px;
+}
+.navbar-header>a {
+    margin-top: 0px;
+    padding-top: 5px;
+}
+.nav >li >a {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.navbar-toggle {
+    padding: 10px;
+    margin: 25px 15px 25px 0;
+}
+.checkbox-inline+.checkbox-inline {
+    margin-left: 0;
+}
+.checkbox label {
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+.hide {
+    display: none;
+}
+.invalid {
+    border-color: #900;
+    background-color: #FDD;
+}
+.footer {
+    height: 60px;
+    padding-top: 20px;
+    background-color: #5a5a5a;
+}
+.logo_lg {
+    background-color: #5a5a5a;
+}
+.logo_sm {
+    width: 100px;
+    height: 100px;
+    display: inline;
+}
+.cc {
+    height: 36px;
+}
+.cc div {
+    background: url(http://cdn.edoceo.com/img/cc.png);
+    border: 1px solid #666;
+    float: left;
+    display: inline;
+}
+.cc .mc {
+    background-position: 0px 0px;
+    height: 32px;
+    margin: 2px;
+    width: 56px;
+}
+.cc .vc {
+    background-position: -56px 0px;
+    height: 32px;
+    margin: 2px;
+    width: 56px;
+}
+.cc .dc {
+    background-position: -112px 0px;
+    height: 32px;
+    margin: 2px;
+    width: 56px;
+}
+.cc .ac {
+    background-position: -168px 0px;
+    height: 32px;
+    margin: 2px;
+    width: 56px;
+}
+.cc .mb {
+    background-position: 0px 32px;
+    height: 32px;
+    margin: 2px;
+    width: 56px;
+}
+.cc .vb {
+    background-position: -56px 32px;
+    height: 32px;
+    margin: 2px;
+    width: 56px;
+}
+.cc .db {
+    background-position: -112px 32px;
+    height: 32px;
+    margin: 2px;
+    width: 56px;
+}
+.cc .ab {
+    background-position: -168px 32px;
+    height: 32px;
+    margin: 2px;
+    width: 56px;
+}
